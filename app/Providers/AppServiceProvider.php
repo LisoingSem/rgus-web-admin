@@ -31,5 +31,8 @@ class AppServiceProvider extends ServiceProvider
 
 		$this->loadViewsFrom(resource_path('website/views'), 'website');
 		$this->loadViewsFrom(resource_path('admin/views'), 'admin');
+
+        Schema::defaultStringLength(125);
+
 	}
 }

@@ -74,6 +74,9 @@ class Kernel extends HttpKernel
             'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
             'locale' => \App\Http\Middleware\SetLocale::class,
             'AdminGuard' => \App\Http\Middleware\AdminGuard::class,
+            'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
+            'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+            'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
             'WebGuard' => \App\Http\Middleware\WebGuard::class,
       ];
 }
