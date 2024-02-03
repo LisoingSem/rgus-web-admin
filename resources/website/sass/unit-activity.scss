@@ -1,0 +1,120 @@
+main {
+    .unit-activity-wrapper {
+
+
+        .filter-option {
+            .item-select {
+                width: 100%;
+                margin-bottom: 15px;
+                label {
+                    display: block;
+                    font-size: 17px;
+                    margin-bottom: 5px;
+                }
+
+                .select-wrapper {
+                    width: 100%;
+                    border-radius: 6px;
+                    border: 1px solid $color-gray;
+                    overflow: hidden;
+                    select {
+                        cursor: pointer;
+                        padding: 5px 10px 5px 10px;
+                        outline: none;
+                        font-size: 15px;
+                        display: block;
+                        width: 100%;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>');
+                        background-repeat: no-repeat;
+                        background-position: right 10px center;
+                        background-size: 13px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+            button {
+                width: 100%;
+                background-color: $color-primary;
+                padding: 7px;
+                margin-top: 8px;
+                cursor: pointer;
+                color: $color-white;
+                border-radius: 6px;
+            }
+        }
+
+        .content-wrapper {
+            .item {
+                height: fit-content;
+                height: -moz-fit-content;
+                background-color: #f8f8f8;
+                padding: 5px;
+                border-radius: 5px;
+                .thumbnail {
+                    border-radius: 3px;
+                    overflow: hidden;
+                    max-height: 180px;
+                    height: 100%;
+                    object-fit: cover;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        margin: auto;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    span{
+                        bottom: 0;
+                        right: 0;
+                        color: $color-white;
+                        background-color: $color-secondary;
+                        margin: 2px;
+                        padding: 3px 10px;
+                        border-radius: 2px;
+                        position: absolute;
+                    }
+
+                    &:hover{
+                        img{
+                            transform: scale(105%);
+                        }
+                    }
+                }
+
+                .title {
+                    padding: 5px 0px 5px 0px;
+                    h3 {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                        transition: all 0.3s ease-in-out;
+                        cursor: pointer;
+                        &:hover{
+                            color: $color-yellow;
+                        }
+                    }
+
+                    .date {
+                        border-top: 1px solid #ccc;
+                        cursor: default;
+                        padding-top: 10px;
+                        color: $color-gray;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

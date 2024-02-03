@@ -1,0 +1,105 @@
+main {
+    .press-release-wrapper {
+        .content {
+            gap: 20px;
+            .item {
+                display: flex;
+                background-color: #f8f8f8;
+                height: 150px;
+                padding: 20px;
+                gap: 15px;
+                .date {
+                    padding-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span {
+                        transition: all 0.3s ease-in-out;
+                        &:nth-child(1) {
+                            display: block;
+                            font-size: 50px;
+                            font-weight: bold;
+                            color: $color-secondary;
+                        }
+
+                        &:nth-child(2) {
+                            margin-top: -10px;
+                            white-space: nowrap;
+                            display: flex;
+                            font-size: 12px;
+                            color: $color-gray;
+                        }
+                    }
+
+                    &:hover {
+                        span {
+                            &:nth-child(1) {
+                                color: $color-yellow;
+                            }
+
+                            &:nth-child(2) {
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h2 {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        line-clamp: 2;
+                        font-size: 14px;
+                        -webkit-box-orient: vertical;
+                        transition: all 0.3s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $color-yellow;
+                        }
+                    }
+
+                    .read-more {
+                        margin-top: 7px;
+                        padding: 3px 10px;
+                        border: 1px solid $color-primary;
+                        border-radius: 2px;
+                        width: max-content;
+                        font-size: 14px;
+                        transition: all 0.3s ease-in-out;
+                        span {
+                            display: block;
+                        }
+
+                        &:hover {
+                            border-color: $color-yellow;
+                            color: $color-yellow;
+                        }
+                    }
+                }
+
+                .thumbnail {
+                    max-width: 170px;
+                    overflow: hidden;
+                    width: 100%;
+                    img {
+                        transition: all 0.3s ease-in-out;
+                        height: 100%;
+                        width: auto;
+                        margin: auto;
+                        border: 1px solid $color-gray;
+                        cursor: pointer;
+                        object-fit: cover;
+                        &:hover {
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

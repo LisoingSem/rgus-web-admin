@@ -1,0 +1,119 @@
+.safari {
+    header {
+        .header-wrapper {
+            .wrapper {
+                .search-wrapper {
+                    .search {
+                        .filter {
+                            .text {
+                                padding: 16px 15px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        .wrapper {
+            ul {
+                li {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+    .wrapper {
+        .footer-wrapper {
+            .news-letter {
+                .input-wrapper {
+                    .icon {
+                        padding: 11px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    @media (max-width: 1260px) {
+        nav {
+            .wrapper {
+                ul {
+                    li {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1175px) {
+        nav {
+            .wrapper {
+                ul {
+                    li {
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1040px) {
+        nav {
+            .wrapper {
+                ul {
+                    li {
+                        a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        nav {
+            .search-wrapper {
+                .search {
+                    .filter {
+                        .text {
+                            padding: 14px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 578px) {
+        nav {
+            .search-wrapper {
+                .search {
+                    .filter {
+                        .text {
+                            padding: unset;
+                            i {
+                                padding: 16px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
